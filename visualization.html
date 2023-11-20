@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Cup Winners Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #chartContainer {
+      width: 40%; /* Adjust the width of the chart container */
+    }
+
+    canvas {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+<div id="chartContainer">
+  <canvas id="worldCupChart" width="300" height="200"></canvas>
+</div>
+
+<script>
+  var ctx = document.getElementById('worldCupChart').getContext('2d');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Brazil', 'Germany', 'Italy', 'Uruguay', 'Argentina'],
+      datasets: [{
+        label: 'Number of Titles',
+        data: [5, 4, 4, 2, 2],
+        backgroundColor: ['#3498db', '#e74c3c', '#2ecc71', '#f39c12', '#9b59b6'],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      legend: {
+        display: false
+      },
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true
+          }
+        }]
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
