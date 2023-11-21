@@ -17,20 +17,60 @@
   </header>
 
   <section class="scrollContainer" id="introduction">
-    <div class="scrollText"><p>Monday. 11<sup>th</sup> of September 2023. A cold wind blows into the main street of Halden.</p></div>
-    <div class="scrollText"><p>The election booths are closed. The count is finished.</p></div>
-    <div class="scrollText"><p>There will be some changes around here...</p></div>
-</section>
+    <div class="scrollText"><p>VM i fotball har alltid vært spennende for mange i verden.</p></div>
+    <div class="scrollText"><p>Stoltheten man føler når man ser landet sitt kjempe for å bli verdensmestere.</p></div>
+    <div class="scrollText"><p>Men i 2022 så var dette ekstra spennende for mange fotballfans.</p></div>
+    <div class="scrollText"><p>VM i 2022 ble sett som en slutt på en æra for mange fotballegender som Cristiano Ronaldo, Lewandoski og Neymar som aldri har vunnet en VM tittel før. Mange av de verdens beste spillerne nærmer seg slutten på karrieren sin.</p></div>
+    <div class="scrollText"><p>Den siste dansen mellom de beste...</p></div>
+  </section>
+
+ 
+<article>
+
+  <h2>Hva er så spesielt med VM i 2022?</h2>
+
+  <p><strong>VM i 2022 er uten tvil den størte fotballturneringen som har blitt arrangert gjennom tidene av FIFA. </strong> </p>
+
+ <p>Verdensmesterskapet eller bedre kjent som VM i fotball er fotballturneringer, der herrelandslag konkurrerer mot hverandre om å bli verdensmestere. 
+  FIFA arrangerer verdensmesterskapet hvert fjerde år, som gjør trofeet veldig verdifullt og sjeldent for et landslag.</p>
+
+  <p>I fotballverdenen idag så er spillere som Lionel Messi og Cristiano Ronaldo sett som de beste spillerne gjennom alle tider. Dette kanskje deres siste gang de deltar i VM før de forlater fotballscenen.</p>
+
+  <p>Det er det som gjør VM i 2022 ekstra spesielt fra alle andre turneringer. Mange fans ser på dette som en slutt på en uforglemmelig æra for fotballspillere. 
+    Mange av de beste nærmer seg slutten av karrieren sin, men det er ikke mange av dem som har vunnet en VM tittel.</p>
+
+  <p><strong>Verdensmesterskapet i 2022 tok sted i Qatar og varte fra 20. November til 18. Desember. Kampene ble spilt i åtte forskjellige fotballstadioner som ligger i østredelen av Qatar. 
+   </strong></p>
 
 <div class="map">
   <iframe title="FIFA 2022 VM Qatar Fotballstadioner" aria-label="Locator maps" id="datawrapper-chart-6Q93t" src="https://datawrapper.dwcdn.net/6Q93t/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="596" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 </div>
 
-<section class="scrollContainer" id="introduction">
-  <div class="scrollText"><p>Monday. 11<sup>th</sup> of September 2023. A cold wind blows into the main street of Halden.</p></div>
-  <div class="scrollText"><p>The election booths are closed. The count is finished.</p></div>
-  <div class="scrollText"><p>There will be some changes around here...</p></div>
+</article>
+  
+
+<section id="changingBg" class="scrollContainer">
+  <div id="decline" class="scrollText">
+      <p>Det er Søndag den 18. Desember 2023. VM Finalen.</p>
+  </div>
+  <div id="increase" class="scrollText">
+      <p>Det er Argentina mot Frankerike.</p>
+  </div>
+  <div class="scrollText"><p> To sterke landslag som skal kjempe for trofeen som mange drømmer om.</p></div>
+  <div id="comparisonchart" class="scrollText">
+      <p>Det er estimert at det kommer til å bli over 1 milliard seere fra hele verden.</p>
+  </div>
+  <div class="scrollText"><p>Prestasjonspresset er høyt. Spillerene vil ikke svikte landet deres.</p></div>
+  <div class="scrollText"><p>Det kan bare være en verdensmester...</p></div>
 </section>
+
+
+<article>
+<h2><strong>Og det ble nemlig Argentina!</strong></h2>
+  <figure>
+    <img src="https://bl-i.thgim.com/public/incoming/va46t7/article66279654.ece/alternates/LANDSCAPE_1200/2022-12-18T190939Z_836193254_UP1EICI1H82HM_RTRMADP_3_SOCCER-WORLDCUP-ARG-FRA-REPORT.JPG" alt="Trulli" style="width:100%; display: block;  margin: auto;">
+    <figcaption>Bilde hentet fra: <a href="https://www.wbur.org/npr/1144086232/argentina-wins-world-cup-final-photos">WBUR</a></figcaption>
+  </figure>
 
 <div class="timeline">
   <div class="timeline-item">
@@ -57,10 +97,44 @@
     </div>
   </div>
 
+</article>
+
   
   <!-- Add more timeline items as needed -->
 
 </div>
+
+<script>
+   //Function to check if element is in viewport
+   function isInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                //Improved check of viewport for elements exceeding viewport height
+                (rect.top <= 0 && rect.bottom >= 0) || 
+                (rect.top >= 0 && rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth))
+            );
+        }
+
+        //Make a check when page scrolls:
+        document.addEventListener('scroll', function () {
+            //If a specific id is in the viewport...
+            if(isInViewport(document.getElementById("decline"))) {
+                //...change the parent elements background image
+                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1637203727770-3fff478fb1ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
+            }
+            if(isInViewport(document.getElementById("increase"))) {
+                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1529154631088-a0e516571c60?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
+            }
+            if(isInViewport(document.getElementById("comparisonchart"))) {
+                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1574602904324-a9ac0fe65331?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
+            }
+
+        }, {
+            passive: true
+        });
+</script>
 
 </body>
 </html>

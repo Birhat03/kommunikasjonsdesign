@@ -47,6 +47,10 @@
     text-align: center;
 }
 
+.scrollText p {
+  font-size: larger;
+}
+
 #introduction {
     /* bilde hentet fra: https://www.unisportstore.no/blog/50761-vm-2022-den-komplette-guiden-til-fifa-world-cup-2022-pa-unisport/ */
     background-image: url("https://thumblr.uniid.it/blog_component/148144/2c6b2b57cb0b.jpg");
@@ -112,4 +116,26 @@
       color: #333;
     }
 
+    #changingBg {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding-bottom: 50vh;
+  }
+
+
+article{
+  display: block;
+  margin: auto;
+  width: 60%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+article p{
+  font-size: large;
+}
+
+ 
  
