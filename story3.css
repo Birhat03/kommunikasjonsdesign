@@ -76,11 +76,11 @@ body {
     .timeline-item {
       position: relative;
       padding: 20px;
-      margin-bottom: 20px;
       background-color: #fff;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #d8d8d8;
     }
 
     .timeline-item:hover {

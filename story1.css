@@ -142,7 +142,6 @@ justify-content: space-between;
     width: 100vw;
     min-height: 60vh;
     overflow: hidden;
-    transition: background-image 2s;
 }
 
 .scrollText {
@@ -151,5 +150,6 @@ justify-content: space-between;
   padding: 1rem;
   background: #fff;
   color: #000;
-  font-size: 18px;
+  font-size: 22px;
+  text-align: center;
 }
