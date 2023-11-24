@@ -131,4 +131,25 @@ justify-content: space-between;
       
     }
 
-    
+    #introduction {
+      background-image: url("https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+  }
+  .scrollContainer {
+    width: 100vw;
+    min-height: 60vh;
+    overflow: hidden;
+    transition: background-image 2s;
+}
+
+.scrollText {
+  margin: 50vh auto;
+  max-width: 50rem;
+  padding: 1rem;
+  background: #fff;
+  color: #000;
+  font-size: 18px;
+}
