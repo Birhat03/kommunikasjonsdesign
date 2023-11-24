@@ -4,6 +4,7 @@ body {
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
+      font-size: 17px;
     }
 
     header {
@@ -98,18 +99,14 @@ body {
       background-color: #3498db;
     }
 
-    .timeline-item:last-child::before {
-      height: 50%;
-    }
-
     .timeline-date {
-      font-size: 0.8em;
+      font-size: 1rem;
       color: #3498db;
     }
 
     .timeline-content {
       margin-top: 10px;
-      color: #555;
+      color: #555555;
     }
 
     .timeline-item h3 {
@@ -134,7 +131,7 @@ article{
 }
 
 article p{
-  font-size: large;
+  font-size: larger;
 }
 
 footer {
@@ -152,3 +149,11 @@ footer div {
   justify-content: space-between;
 }
  
+.kilder {
+  display: block;
+  position: absolute;
+  color: white;
+  padding-left: 5vh;
+  bottom: 0.5%;
+  
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Høyere Utdanning?</title>
+  <link rel="stylesheet" href="story1.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Utdanningsnivå', 'Andel i prosent'],
+          ['Grunnskolenivå',     1062631	],
+          ['Videregående skolenivå',  1628428],
+          ['Fagskolenivå',  141501],
+          ['Universitets- og høgskolenivå', 1650827],
+        ]);
+
+        var options = {
+          title: 'Hold musen over for å se spesifikke tall:',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+  
+</head>
+<body>
+  <header>
+    <div id="overskrift">
+        <h1>Høyere utdanning? - Min Fremtid, Mine Valg</h1>
+    </div>
+    <div>
+      <p class="kilder">Bilde hentet fra: Unsplash. </p>
+    </div>
+</header>
+<main>
+
+<article>
+
+<p>Høyere utdanning er viktig hvis du vil åpne nye muligheter for deg i fremtiden. Men fremtiden kan være skummel, selv for en som er nesten ferdig utdannet. 
+  Kanskje du ikke vet hva du skal bli eller om du i det hele tatt kommer inn på det studiet du vil ha. 
+  Eller kanskje du er redd du ikke får gode nok karakterer eller usikker om du finner deg jobb etter fullført bachelorgrad. 
+  Det er mange faktorer som står på spill...</p>
+
+ <p>Etter at Mohammed (20) fullførte studiespesialisering på videregående skole så valgte han å ta et friår. Nå jobber han som en taxisjåfør. </p> 
+
+  <p><strong>Hvordan føles det å jobbe etter å ha blitt ferdig med skole?</strong></p>
+  <p>- Deilig. Du har mye frihet, spesielt som en taxisjåfør. Du får jobbe når du vil og du er ikke bindet fast med skole. Som en taxisjåfør så er det ingen spesielle lekser eller 
+    oppgaver som må gjøres. Bare å kjøre kunder fra A til B. </p>
+
+  <p><strong>Hvorfor studerer du ikke ved siden av jobb?</strong></p>
+  <p>- Jeg følte at jeg trengte et friår for å ta en pause fra skole, men nå jeg anger litt fordi jeg føler at ligger litt bak. Eller ikke det at jeg ligger bak, 
+    men det at livet mitt er satt på "pause". </p> <p>- Målet er jo å skaffe seg en høyere grad, få seg en stabil jobb også etterpå gifte meg. Jeg føler ikke noe progresjon for å 
+    oppnå det målet akkurat nå. </p> <p>- Dager der jeg ikke jobber og ikke har noe annet å gjøre, så føler jeg meg veldig uproduktiv. Men det går fint, jeg har tenkt å søke høyere utdanning 
+    neste år. Det er jo tross alt min fremtid og mine valg.</p>
+
+    
+    <figure>
+      <h2>Befolkningens utdanningsnivå i Norge 2022 - 16 år og eldre:</h2>
+      <div id="circles">
+        <div class="circle-container">
+          <div class="circle" id="circle1">23,7%</div>
+          <p>Grunnskolenivå</p>
+        </div>
+      
+        <div class="circle-container">
+          <div class="circle" id="circle2">36,3%</div>
+          <p>Videregående skolenivå</p>
+        </div>
+      
+        <div class="circle-container">
+          <div class="circle" id="circle3">2,3%</div>
+          <p>Fagskolenivå</p>
+        </div>
+      
+        <div class="circle-container">
+          <div class="circle" id="circle4">36,8%</div>
+          <p>Universitets- og høgskolenivå</p>
+        </div>
+      </div>
+      <div id="donutchart" style="width: 900px; height: 500px;"></div>
+      <p>Uoppgitte eller ingen utdanning: <strong>24 913</strong></p>
+      <figcaption>Statistikk hentet fra <a href="https://www.ssb.no/utdanning/utdanningsniva/statistikk/befolkningens-utdanningsniva">SSB</a></figcaption>
+    </figure>
+  <p><strong>Noen tanker eller meninger om høyere utdanning?</strong></p>
+
+  <p>- Ja jeg er redd jeg ikke fullfører en studie jeg går på. Er redd for at jeg blir lat og ikke gidde å studere. På videregående så var jeg veldig demotivert, 
+    men jeg vet at det er viktig å fullføre det for å få seg en bra fremtid. Det eneste problemet mitt er at jeg er redd jeg ikke orker innleveringer og oppgaver. 
+    Eller det at jeg syns noen fag er ubrukelig eller kjedelig for meg.</p>
+
+  
+
+  
+
+</article>
+
+</main>
+<footer>
+  <div>
+      <p> Laget av Birhat Majid, Aman Iqbal, Sajad Al-Zayadi</p>
+      <br>
+      <p>Høgskolen i Østfold</p>
+  </div>
+</footer>
+</body>
+</html>
