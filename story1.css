@@ -5,6 +5,7 @@ body {
 font-size: 17px;
   padding: 0;
   background-color: #f4f4f4;
+  overflow-x: hidden;
 }
 
 header {
@@ -59,9 +60,7 @@ flex-flow: row wrap;
 justify-content: space-between;
 }
 
-article p {
-  font-size: larger;
-}
+
 
 #circles {
       display: flex;
@@ -109,10 +108,18 @@ article p {
     
     figure{
       margin-bottom: 4rem;
+      margin: auto;
       background-color: #cecece;
       width: 1000px;
       padding: 2rem;
-      border-radius:1rem ;
+      border-radius:5%;
+      border-style: solid;
+    }
+
+    #donutchart{
+      border-style: solid;
+      border-radius: .5%;
+      margin: auto;
     }
 
     .kilder {
