@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Story 2</title>
+    <title>Teknologi og sosiale medier</title>
     <link href="story2.css" rel="stylesheet" media="all">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
         <div>
-            <h1>Winds of change are blowing over Halden...</h1>
-            <a href="#introduction">Start the story</a>
+            <h1>- «Teknologi og sosiale medier fjerner oss fra realiteten»</h1>
         </div>
     </header>
     <section class="scrollContainer" id="introduction">
@@ -47,9 +46,7 @@
             <p>INP, who were founded in 2020 and thusly not elegible in the 2019 election, make a huger impact on the 2023 election.</p>
         </div>
         <div id="comparisonchart" class="scrollText">
-            <h2>Steal from the rich...</h2>
-            <p>Comparing the numbers, we could argue that INP has "stolen" the votes Senterpartiet got in 2019. This means that Høyre now have more potenital partners and will probably be in government for the next four years.</p>
-            <p>But, these were not the only changes from 2019.</p>
+            <h2>Andel som har brukt ulike medier en gjennomsnittsdag</h2>
             <canvas id="comparison"></canvas>
         </div>
     </section>
@@ -153,11 +150,11 @@
                 labels: labelData, //data array made from the data set
                 datasets: [
                     {
-                        label: "Votes 2019",
+                        label: "År 2000",
                         data: votes2019 //data array made from the data set
                     },
                     {
-                        label: "Votes 2023",
+                        label: "År 2022",
                         data: votes2023 //data array made from the data set
                     }
                 ]
