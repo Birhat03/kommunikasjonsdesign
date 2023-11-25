@@ -13,135 +13,83 @@
             <h1>- «Teknologi og sosiale medier fjerner oss fra realiteten»</h1>
         </div>
     </header>
-    <section class="scrollContainer" id="introduction">
-        <div class="scrollText"><p>Monday. 11<sup>th</sup> of September 2023. A cold wind blows into the main street of Halden.</p></div>
-        <div class="scrollText"><p>The election booths are closed. The count is finished.</p></div>
-        <div class="scrollText"><p>There will be some changes around here...</p></div>
-    </section>
-    <section class="textSection">
-        <h2>...the results are in!</h2>
-        <p>Halden is in for a change in government, as the 2023 election contained a few surprises!</p>
-        <div style="min-height:341px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/cn75t/embed.js?v=1" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/cn75t/full.png" alt="" /></noscript></div>
-        <p>Let's look at the biggest surprises.</p>
-    </section>
+    <main>
     <section id="changingBg" class="scrollContainer">
-        <div id="decline" class="scrollText">
-            <h2>Biggest decline</h2>
-            <aside class="alignRight">
-                <div class="circle redBg">
-                    <span class="big">-1239</span>
-                    <span class="small">Votes</span>
-                </div>
-            </aside>
-            <p>Senterpartiet had a decrease in votes of 1239 since 2019. This means that Arbeiderpartiet is losing a lot of partners since 2019.</p>
-        </div>
-        <div id="increase" class="scrollText">
-            <h2>Highest riser</h2>
-            <aside class="alignRight">
-                <div class="circle greenBg">
-                    <span class="big">1290</span>
-                    <span class="small">Votes</span>
-                </div>
-            </aside>
-            <p>INP, who were founded in 2020 and thusly not elegible in the 2019 election, make a huger impact on the 2023 election.</p>
-        </div>
-        <div id="comparisonchart" class="scrollText">
-            <h2>Andel som har brukt ulike medier en gjennomsnittsdag</h2>
-            <canvas id="comparison"></canvas>
-        </div>
-    </section>
 
+        <div id="firstBg" class="scrollText"> <p>I en tid der teknologi har blitt en del av hverdagen vår, så har det gjort det lettere å være i kontakt. </p> </div>
+        <div class="scrollText"><p>Men samtidig så kan det skape mer distanse mellom oss. Mer distanse fra realiteten.</p></div>
+        <div class="scrollText"><p>Jonas, en 21 år gammel gutt som liker å være sosial, er en illustrasjon av hvordan teknologi og sosiale medier har påvirket han.</p></div>
+        <div  class="scrollText"><p>Det hele startet i ungdomsskolen da Jonas så at alle andre har begynt med sosiale medier.  Han ville bli en del av det. </p></div>
+        <div  class="scrollText"><p>Sosiale medier - et sted der du kan utrykke deg selv og dele dine opplevelser.</p></div>
+
+        <div id="secondBg" class="scrollText"><p>Det som startet som en uskyldig form for selv utrykk, ble fort til et søk etter validering fra andre og en jakt etter likes og følgere.</p></div>
+        <div  class="scrollText"><p>«Hver dag var som en konkurranse om å ha det mest imponerende livet», deler Jonas</p></div>
+        <div  class="scrollText"><p>«Jeg så på andre folk og influensere og prøvde å ha et image som egentlig ikke var meg, alt føltes så falskt, sosiale medier påvirket hvordan jeg  oppfattet meg selv og andre».</p></div>
+        <div class="scrollText"><p>«Jeg klistret meg fast til mobilen hele tiden og det påvirket også hvordan jeg sosialiserte med andre mennesker».</p></div>
+        <div  class="scrollText"><p>«Når man har en samtale over meldinger uten å se hverandres ansikt så føler jeg at vanskelig å utrykke seg selv».</p></div>
+        <div  class="scrollText"><p>«Og hvis det faktisk var kommunikasjon fjes mot fjes så pleide det å være på videochatt».</p></div>
+
+        <div id="thirdBg" class="scrollText"><p>«Problemet er at vi gjør ting på nett istedenfor å gjøre det fysisk».</p></div>
+        <div  class="scrollText"><p>I dag så bruker fortsatt Jonas sosiale medier, men bare for å holde kontakt med venner og familie.</p></div>
+        <div  class="scrollText"><p>«Jeg syns sosiale medier er fantastisk og det har gjort det enklere å holde kontakt, men hvis man blir for avhengig av det så kan det fort bli usunt».</p></div>
+        <div  class="scrollText"><p>«Og dette gjelder all slags mediebruk, ikke bare sosiale medier.»</p></div>
+        <div class="scrollText">
+            <figure> 
+                <span>Andel som har brukt ulike medier en gjennomsnittsdag i Norge (Prosent)</span>
+                <canvas id="comparison"></canvas>
+                <figcaption><span>Statistikk hentet fra: <a href="https://www.ssb.no/kultur-og-fritid/tids-og-mediebruk/statistikk/norsk-mediebarometer">SSB</a> </span></figcaption>
+            </figure>
+           
+        </div>
+        <div  class="scrollText"><p>«Å se på en serie er ikke det samme som å lese en bok, det finnes folk som er veldig avhengig av teknologi og det gjør meg bekymret».</p></div>
+        <div id="fourthBg" class="scrollText"><p>«Jeg ønsker at mine fremtidige barn skal la mobilen være mens vi spiser middag og vise mer kjærlighet, siden det er det som gjør livet verdt det».</p></div>
+    </section>
+</main>
+<footer>
+    <div>
+        <span> Laget av Birhat Majid, Aman Iqbal, Sajad Al-Zayadi</span>
+        <br>
+        <span>Høgskolen i Østfold</span>
+    </div>
+  </footer>
     <script>
         const comparison = document.getElementById("comparison")
         //Dataset
         const data = [
         {
-            Partyname: "Arbeiderpartiet",
-            Abbreviation: "AP",
-            Votes2019: "2603",
-            Votes2023: "2982"
+            Abbreviation: "Papiravis",
+            Bruk2000: "77",
+            Bruk2022: "21"
         },
         {
-            Partyname: "Fremskrittspartiet",
-            Abbreviation: "FrP",
-            Votes2019: "1034",
-            Votes2023: "1030"
+            Abbreviation: "Internett",
+            Bruk2000: "27",
+            Bruk2022: "93"
         },
         {
-            Partyname: "Høyre",
-            Abbreviation: "H",
-            Votes2019: "4141",
-            Votes2023: "3997"
+            Abbreviation: "Nettavis",
+            Bruk2000: "0",
+            Bruk2022: "64"
         },
         {
-            Partyname: "Kristelig Folkeparti",
-            Abbreviation: "KrF",
-            Votes2019: "478",
-            Votes2023: "510"
+            Abbreviation: "Bøker",
+            Bruk2000: "20",
+            Bruk2022: "26"
         },
         {
-            Partyname: "Miljøpartiet de Grønne",
-            Abbreviation: "MdG",
-            Votes2019: "1058",
-            Votes2023: "530"
-        },
-        {
-            Partyname: "Rødt",
-            Abbreviation: "R",
-            Votes2019: "1044",
-            Votes2023: "802"
-        },
-        {
-            Partyname: "Senterpartiet",
-            Abbreviation: "Sp",
-            Votes2019: "2037",
-            Votes2023: "798"
-        },
-        {
-            Partyname: "Sosialistisk Venstreparti",
-            Abbreviation: "SV",
-            Votes2019: "744",
-            Votes2023: "672"
-        },
-        {
-            Partyname: "Venstre",
-            Abbreviation: "V",
-            Votes2019: "393",
-            Votes2023: "190"
-        },
-        {
-            Partyname: "Pensjonistpartiet",
-            Abbreviation: "Pp",
-            Votes2019: "1206",
-            Votes2023: "1438"
-        },
-        {
-            Partyname: "Industri og Næringspartiet",
-            Abbreviation: "INP",
-            Votes2019: "0",
-            Votes2023: "1290"
-        },
-        {
-            Partyname: "Liberalistene",
-            Abbreviation: "Lib",
-            Votes2019: "0",
-            Votes2023: "51"
-        },
-        {
-            Partyname: "Norgesdemokratene",
-            Abbreviation: "ND",
-            Votes2019: "0",
-            Votes2023: "201"
+            Abbreviation: "Serier/film/video",
+            Bruk2000: "10",
+            Bruk2022: "51"
         }
         ]
 
         //Create arrays with the necessary data, to make it available for JavaScript
         const labelData = []
         data.map((item) => labelData.push(item.Abbreviation))
-        const votes2019 = []
-        data.map((item) => votes2019.push(item.Votes2019))
-        const votes2023 = []
-        data.map((item) => votes2023.push(item.Votes2023))
+        const bruk2000 = []
+        data.map((item) => bruk2000.push(item.Bruk2000))
+        const bruk2022 = []
+        data.map((item) => bruk2022.push(item.Bruk2022))
 
         //Initialize the graph using Chart.js
         new Chart(comparison, {
@@ -151,11 +99,11 @@
                 datasets: [
                     {
                         label: "År 2000",
-                        data: votes2019 //data array made from the data set
+                        data: bruk2000 //data array made from the data set
                     },
                     {
                         label: "År 2022",
-                        data: votes2023 //data array made from the data set
+                        data: bruk2022 //data array made from the data set
                     }
                 ]
             },
@@ -181,15 +129,19 @@
         //Make a check when page scrolls:
         document.addEventListener('scroll', function () {
             //If a specific id is in the viewport...
-            if(isInViewport(document.getElementById("decline"))) {
-                //...change the parent elements background image
-                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1606955317161-cb7d261c039a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)"
+            if(isInViewport(document.getElementById("firstBg"))) {
+                //...change the parent elements background image                        
+                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1622549037543-49cf1ca0babc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
             }
-            if(isInViewport(document.getElementById("increase"))) {
-                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1465343161283-c1959138ddaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)"
+            if(isInViewport(document.getElementById("secondBg"))) {
+                //...change the parent elements background image                        
+                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1553532435-93d532a45f15?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
             }
-            if(isInViewport(document.getElementById("comparisonchart"))) {
-                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1516706332927-bb3a20d62514?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)"
+            if(isInViewport(document.getElementById("thirdBg"))) {
+                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1532356884227-66d7c0e9e4c2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
+            }
+            if(isInViewport(document.getElementById("fourthBg"))) {
+                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1602797924373-1000fa140fb7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
             }
 
         }, {
