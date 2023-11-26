@@ -116,7 +116,7 @@ justify-content: space-between;
       border-style: solid;
     }
 
-    #donutchart{
+    #piechart{
       border-style: solid;
       border-radius: .5%;
       margin: auto;
@@ -131,10 +131,7 @@ justify-content: space-between;
       
     }
 
-    #introduction {
-     
-      
-  }
+  
   .scrollContainer {
     background-image: url("https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-attachment: fixed;
@@ -154,4 +151,11 @@ justify-content: space-between;
   color: #000;
   font-size: 22px;
   text-align: center;
+}
+
+figcaption{
+  margin-top:5px;
+  color: grey;
+  font-size: smaller;
+  font-style: italic;
 }

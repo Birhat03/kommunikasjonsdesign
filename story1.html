@@ -20,10 +20,11 @@
 
         var options = {
           title: 'Hold musen over for å se spesifikke tall:',
-          pieHole: 0.4,
+          is3D: true,
+          backgroundColor: '#cecece'
         };
 
-        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
         chart.draw(data, options);
       }
     </script>
@@ -32,10 +33,10 @@
 <body>
   <header>
     <div id="overskrift">
-        <h1>Høyere utdanning? - «Min Fremtid, mine Valg»</h1>
+        <h1>- «Høyere utdanning? - Min Fremtid, mine Valg»</h1>
     </div>
     <div>
-      <p class="kilder">Bilde hentet fra: Unsplash. </p>
+      <p class="kilder">Foto: Unsplash. </p>
     </div>
 </header>
 <main>
@@ -48,6 +49,8 @@
 </section>
 
 <article>
+
+  <h2>Friår etter VGS</h2>
 
  <p>Etter at Mohammed (20) fullførte studiespesialisering på videregående skole så valgte han å ta et friår. Nå jobber han som en taxisjåfør. </p> 
 
@@ -99,9 +102,9 @@
           <p>Universitets- og høgskolenivå</p>
         </div>
       </div>
-      <div id="donutchart" style="width: 900px; height: 500px;"></div>
+      <div id="piechart" style="width: 900px; height: 500px;"></div>
       <p>Uoppgitte eller ingen utdanning: <strong>24 913</strong></p>
-      <figcaption>Statistikk hentet fra <a href="https://www.ssb.no/utdanning/utdanningsniva/statistikk/befolkningens-utdanningsniva">SSB</a></figcaption>
+      <figcaption>Statistikk: <a href="https://www.ssb.no/utdanning/utdanningsniva/statistikk/befolkningens-utdanningsniva">SSB</a></figcaption>
     </figure>
     
   </article>

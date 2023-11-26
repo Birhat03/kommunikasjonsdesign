@@ -154,3 +154,10 @@ footer div {
   bottom: 0.5%;
   
 }
+
+figcaption{
+  margin-top:5px;
+  color: grey;
+  font-size: smaller;
+  font-style: italic;
+}

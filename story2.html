@@ -26,7 +26,7 @@
         <div  class="scrollText"><p>«Hver dag var som en konkurranse om å ha det mest imponerende livet», deler Jonas</p></div>
         <div  class="scrollText"><p>«Jeg så på andre folk og influensere og prøvde å ha et image som egentlig ikke var meg, alt føltes så falskt, sosiale medier påvirket hvordan jeg  oppfattet meg selv og andre».</p></div>
         <div class="scrollText"><p>«Jeg klistret meg fast til mobilen hele tiden og det påvirket også hvordan jeg sosialiserte med andre mennesker».</p></div>
-        <div  class="scrollText"><p>«Å sende meldinger bak en skjerm føltes rart, man vet aldri hvordan den andre personen reagerer bak skjermen».</p></div>
+        <div  class="scrollText"><p>«Å sende meldinger føles rart, for man vet aldri hvordan den andre personen reagerer bak skjermen».</p></div>
         <div  class="scrollText"><p>«Og hvis det faktisk var kommunikasjon fjes mot fjes så pleide det å være på videochatt».</p></div>
 
         <div id="thirdBg" class="scrollText"><p>«Folk er mer sosiale på nett enn det de er på ekte».</p></div>
@@ -37,12 +37,12 @@
             <figure> 
                 <span>Andel som har brukt ulike medier en gjennomsnittsdag i Norge (Prosent)</span>
                 <canvas id="comparison"></canvas>
-                <figcaption><span>Statistikk hentet fra: <a href="https://www.ssb.no/kultur-og-fritid/tids-og-mediebruk/statistikk/norsk-mediebarometer">SSB</a> </span></figcaption>
+                <figcaption>Statistikk: <a href="https://www.ssb.no/kultur-og-fritid/tids-og-mediebruk/statistikk/norsk-mediebarometer">SSB</a></figcaption>
             </figure>
            
         </div>
         <div  class="scrollText"><p>«Å se på en serie er ikke det samme som å lese en bok, det finnes folk som er veldig avhengig av teknologi og det gjør meg bekymret».</p></div>
-        <div id="fourthBg" class="scrollText"><p>«Jeg håper at mine fremtidige barn skal la mobilen være mens vi spiser middag og vise mer kjærlighet, siden det er det som gjør livet verdt det».</p></div>
+        <div id="fourthBg" class="scrollText"><p>«Jeg håper at mennesker i fremtiden bruker mindre tid på teknologi og istedet viser mer kjærlighet til de rundt oss, siden det er det som gjør livet verdt det».</p></div>
     </section>
 </main>
 <footer>
@@ -57,27 +57,27 @@
         //Dataset
         const data = [
         {
-            Abbreviation: "Papiravis",
+            Name: "Papiravis",
             Bruk2000: "77",
             Bruk2022: "21"
         },
         {
-            Abbreviation: "Internett",
+            Name: "Internett",
             Bruk2000: "27",
             Bruk2022: "93"
         },
         {
-            Abbreviation: "Nettavis",
+            Name: "Nettavis",
             Bruk2000: "0",
             Bruk2022: "64"
         },
         {
-            Abbreviation: "Bøker",
+            Name: "Bøker",
             Bruk2000: "20",
             Bruk2022: "26"
         },
         {
-            Abbreviation: "Serier/film/video",
+            Name: "Serier/film/video",
             Bruk2000: "10",
             Bruk2022: "51"
         }
@@ -85,7 +85,7 @@
 
         //Create arrays with the necessary data, to make it available for JavaScript
         const labelData = []
-        data.map((item) => labelData.push(item.Abbreviation))
+        data.map((item) => labelData.push(item.Name))
         const bruk2000 = []
         data.map((item) => bruk2000.push(item.Bruk2000))
         const bruk2022 = []
@@ -141,7 +141,7 @@
                 document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1532356884227-66d7c0e9e4c2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
             }
             if(isInViewport(document.getElementById("fourthBg"))) {
-                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1602797924373-1000fa140fb7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
+                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1499540633125-484965b60031?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
             }
 
         }, {
