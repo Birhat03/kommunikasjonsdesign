@@ -57,7 +57,7 @@ header a {
     max-width: 50rem;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.4);
-    color: #000;
+    color: #fff;
 }
 #changingBg {
     background-size: cover;
