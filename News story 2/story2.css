@@ -34,6 +34,7 @@ h1 {
     font-size: 3rem;
     color: #fff;
     text-shadow: 2px 2px 2px #000;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 header a {
@@ -52,10 +53,10 @@ header a {
 }
 
 .scrollText {
-    margin: 50vh auto;
+    margin: 100vh auto;
     max-width: 50rem;
     padding: 1rem;
-    background: #e6e4e4;
+    background: rgba(0, 0, 0, 0.4);
     color: #000;
 }
 #changingBg {

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+body {
+    font-family: 'PT Serif', serif;
+    color: #fff;
+  margin: 0;
+font-size: 17px;
+  padding: 0;
+  background-color: #000;   
+  overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://plus.unsplash.com/premium_photo-1668046490216-6231bc4cab04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: top left;
+}
+
+header div {
+    display: block;
+
+}
+
+
+
+#overskrift{
+background: #000000b3;
+color: white;
+padding: 2%;
+
+}
+
+article{
+display: block;
+margin: auto;
+width: 60%;
+padding-top: 3rem;
+padding-bottom: 3rem;
+}
+
+article p{
+font-size: large;
+}
+
+footer {
+background-color: darkslategrey;
+color: white;
+width: 100%;
+}
+
+footer div {
+padding: 2rem 2rem;
+margin: 0 auto;
+margin: auto;
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+}
+
+#introduction{
+    background-image: url("https://images.unsplash.com/photo-1697310712004-f0c791d79668?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+  
+  .scrollContainer {
+    background-image: url("https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    width: 100vw;
+    min-height: 60vh;
+    overflow: hidden;
+}
+
+.scrollText {
+  margin: 100vh auto;
+  max-width: 50rem;
+  padding: 1rem;
+  background: #000;
+color: white;
+  font-size: 22px;
+  text-align: center;
+}
+
+.scrollLeft {
+    margin-top: 100vh;
+    margin-bottom: 100vh;
+    margin-left: 5rem;
+  max-width: 40rem;
+  padding: 1rem;
+  background: #000;
+  color: white;
+  font-size: 20px;
+  
+}
+
+.scrollRight {
+    margin-top: 100vh;
+    margin-bottom: 100vh;
+    margin-left: 60%;
+  max-width: 40rem;
+  padding: 1rem;
+  background: #000;
+color: white;
+  font-size: 20px;
+}
+
+
+
+figcaption{
+  margin-top:5px;
+  color: grey;
+  font-size: smaller;
+  font-style: italic;
+}
+
+.kilder {
+    margin-left: 3rem;
+}
+
+.interviewcontainer{
+    background-image: none;
+    background-color: #000;
+}
+.interview {
+    margin-top: 60vh;
+    margin-bottom: 50vh;
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.timeline{
+    background-image: url("https://images.unsplash.com/photo-1653798351714-53a89a88b486?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}

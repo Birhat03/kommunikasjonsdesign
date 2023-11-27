@@ -40,7 +40,7 @@ body {
 }
 
 .scrollText {
-    margin: 50vh auto;
+    margin: 100vh auto;
     max-width: 50rem;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.7);
